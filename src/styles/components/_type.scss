@@ -1,6 +1,9 @@
 body{
     font-family: $f-typo;
     font-size: $s-text;
+    p{
+        line-height: $line-height;
+    }
 }
 .text{
     font-weight: $w-light;
@@ -49,11 +52,16 @@ body{
 }
 .param{
     &--el{
-        &__btn{
-            line-height: 0.6;
+        &:first-child{
+            p{
+                line-height: 1;
+                &:last-child{
+                    line-height: $line-height;
+                }
+            }
         }
-        &:last-child{
-            line-height: 0.6;
+        p{
+            line-height: 0.6;   
         }
     }
     &--date{
@@ -67,6 +75,10 @@ body{
 }
 .btn{
     &--main{
+        text-indent: 120px;
+        color: $c-beigeDark;   
+    }
+    &--message{
         text-indent: 120px;
         color: $c-beigeDark;   
     }

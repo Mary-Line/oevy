@@ -20,19 +20,22 @@ body{
         &__close{
             background-image: url(../../assets/images/fermer.svg);
         }
-        &__next{
-            background-image: url(../../assets/images/suivant.svg);
-        }
-        &__shut{
-            background-image: url(../../assets/images/fermer.svg);
-        }
-        &__before{
-            background-image: url(../../assets/images/before.svg);
-        }
         &__check{
             background-image: url(../../assets/images/valider.svg);
         }
     }
+    &--message{
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        &__ok{
+            background-image: url(../../assets/images/valider.svg);
+        }
+        &__close{
+            background-image: url(../../assets/images/fermer.svg);
+        }
+    }
+
 }
 .param{
     list-style: none;

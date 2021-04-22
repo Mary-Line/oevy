@@ -56,9 +56,3 @@ for( let label of labels){
         e.currentTarget.classList.add("species--el__select");
     })
 }
-
-
-let btn_next = document.querySelector(".btn--main__next");
-btn_close.addEventListener("click", (e) =>{
-    
-})
