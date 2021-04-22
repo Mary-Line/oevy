@@ -36,7 +36,6 @@ let btn_couv = document.querySelector(".btn--main__add");
 let display_couv = document.querySelector(".couvaison--display");
 let create_couv = document.querySelector(".couvaison--create");
 btn_couv.addEventListener("click", (e) =>{
-    console.log("test");
     display_couv.classList.add("hidden");
     create_couv.classList.remove("hidden");
 })
@@ -47,7 +46,6 @@ btn_close.addEventListener("click", (e) =>{
 })
 console.log(labels);
 for( let label of labels){
-    console.log(label)
     label.classList.remove("species--el__select");
     label.addEventListener("click", (e) =>{
         for(let label of labels){
@@ -56,3 +54,38 @@ for( let label of labels){
         e.currentTarget.classList.add("species--el__select");
     })
 }
+/*================================
+    AFFICHER MESSAGE ERROR
+================================*/
+let messageError = document.querySelector(".messageError")
+let btn_check = document.querySelector(".btn--main__check");
+let form_name = document.getElementById("name");
+let form_species = document.getElementsByName("species");
+
+btn_check.addEventListener("click", (e)=>{
+    let result_specie
+    let result_name
+    if(form_name.value.length > 0){
+        result_name = true;
+    }
+    for(let specie of form_species){
+        if(specie.checked == true){
+            result_specie = true;
+        }
+    }
+    if(result_name == true & result_specie == true){
+        console.log("next");
+    }else{
+        messageError.classList.remove("hidden");
+    }
+})
+
+let btnClose = document.querySelector(".btn--message__close");
+
+btnClose.addEventListener("click", (e)=>{
+    messageError.classList.add("hidden");
+})
+let btnOk = document.querySelector(".btn--message__ok");
+btnOk.addEventListener("click", (e)=>{
+    messageError.classList.add("hidden");
+})

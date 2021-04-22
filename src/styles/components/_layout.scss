@@ -164,10 +164,12 @@ header{
     height: 100vh;
     top: 0;
     &--case{
-        width: 490px;
-        margin: 172px auto auto;
+        max-width: 1000px;
         padding: 32px;
-        position: relative;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         p{
             padding: 96px 0;
         }
