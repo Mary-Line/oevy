@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <header>
+  <header class="header--interface">
     <h1 class="title title--logo">
       <svg class="logo" viewBox="0 0 637.52 254" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -130,7 +130,7 @@
       </ul>
     </section>
     <section class="couvaison">
-      <section class="couvaison--display">
+      <section class="couvaison--display hidden">
         <h2 class="title title--medium">Ajouter une couvaison</h2>
         <button class="btn btn--main btn--large btn--main__add">Ajouter</button>      
       </section>
@@ -145,18 +145,18 @@
             </div>
             <div class="form--species">
               <h3 class="title title--small">Choix de l'espèce</h3>
-              <ul class="species">
-                <!--importer les espèces depuis DB-->
+              <ul id="specie" class="species">
+                 <!--Importer depuis DB-->
                 <li class="species--el">
-                  <input type="radio" id="poule" name="species" value="poule" required>
+                  <input type="radio" id="poule" name="species" value="poule">
                   <label class="form--el" for="poule"><p>poule</p></label>
                 </li>
                 <li class="species--el">
-                  <input type="radio" id="dinde" name="species" value="dinde" required>
+                  <input type="radio" id="dinde" name="species" value="dinde">
                   <label class="form--el" for="dinde"><p>dinde</p></label>
                 </li>
                 <li class="species--el">
-                  <input type="radio" id="canard" name="species" value="canard" required>
+                  <input type="radio" id="canard" name="species" value="canard">
                   <label class="form--el" for="canard"><p>canard</p></label>
                 </li>
               </ul>
@@ -164,6 +164,36 @@
           </div>
           <button type="button" class="btn btn--small btn--main btn--main__check">Valider</button>
         </form>
+      </section>
+      <section class="couvaison--ready">
+        <header class="header--couvaison">
+          <!--Importer depuis DB-->
+          <h2 class="title title--medium" id="name">Nom de la couvaison</h2>
+          <!--Importer depuis DB-->
+          <h3 class="title title--small" id="nameSpecie">Nom de l'espèce</h3>
+        </header>
+        <ul class="step">
+          <li class="step--el">
+            <h4 class="title title--mini">Couvaison</h4>
+            <!--Importer depuis DB-->
+            <p class="text--mega text--bold" id="time">21</p>
+            <p class="text--large">Jours</p>
+          </li>
+          <li class="step--el">
+            <h4 class="title title--mini">Arrêt retournement</h4>
+             <!--Importer depuis DB-->
+            <p class="text--mega text--bold" id="dayRotation">05</p>
+             <!--Importer depuis DB-->
+            <p class="text--large" id="monthRotation">Novembre</p>
+          </li>
+          <li class="step--el">
+            <h4 class="title title--mini">&Eacute;closion</h4>
+             <!--Importer depuis DB-->
+            <p class="text--mega text--bold" id="dayHatch">05</p>
+             <!--Importer depuis DB-->
+            <p class="text--large" id="monthHatch">Novembre</p>
+          </li>
+        </ul>
       </section>
     </section>
   </main>
