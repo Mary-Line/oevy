@@ -1,0 +1,82 @@
+body{
+    font-family: $f-typo;
+    font-size: $s-text;
+}
+.text{
+    font-weight: $w-light;
+    &--bold{
+        font-weight: $w-bold;
+    };
+    &--minus{
+        font-size: $s-minus;
+    };
+    &--medium{
+        font-size: $s-medium;
+    };
+    &--big{
+        font-size: $s-big;
+    };
+    &--large{
+        font-size: $s-large;
+    };
+    &--mega{
+        font-size: $s-mega;
+    };
+    &--extra{
+        font-size: $s-extra;
+    };
+}
+.couvaison{
+    &--display{
+        .title{
+            &--medium{
+                text-align: center;
+            }
+        }
+    }
+}
+.title{
+    font-weight: $w-light;
+    &--medium{
+        font-size: $s-large;
+    }
+    &--small{
+        font-size: $s-big;
+    }
+    &--bold{
+        font-weight: $w-bold;
+    }
+}
+.param{
+    &--el{
+        &__btn{
+            line-height: 0.6;
+        }
+        &:last-child{
+            line-height: 0.6;
+        }
+    }
+    &--date{
+        letter-spacing: 2.3px;
+        text-align: center;
+    }
+    &--hour{
+        line-height: 1;
+        text-align: center;
+    }
+}
+.btn{
+    &--main{
+        text-indent: 120px;
+        color: $c-beigeDark;   
+    }
+}
+.form{
+    &--name{
+        input{
+            &::placeholder{
+                color: $c-brun;
+            }
+        }
+    }
+}

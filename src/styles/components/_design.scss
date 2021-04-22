@@ -1,0 +1,89 @@
+body{
+    background-color: $c-whiteYellow;
+}
+.btn{
+    border: none;
+    box-shadow: 5px 5px 8px 0px rgba(174,174,192,0.25), -5px -5px 8px 0px rgb(255,255,255);
+    border-radius: 13px;
+    background-color: $c-beigeDark;
+    .bell{
+        fill: $c-brun;
+    }
+    &--main{
+        background-size: 32px 32px;
+        background-repeat: no-repeat;
+        background-position: center;
+        &__add{
+            background-size: 80px 80px;
+            background-image: url(../../assets/images/more.svg);
+        }
+        &__close{
+            background-image: url(../../assets/images/fermer.svg);
+        }
+        &__next{
+            background-image: url(../../assets/images/suivant.svg);
+        }
+        &__shut{
+            background-image: url(../../assets/images/fermer.svg);
+        }
+        &__before{
+            background-image: url(../../assets/images/before.svg);
+        }
+        &__check{
+            background-image: url(../../assets/images/valider.svg);
+        }
+    }
+}
+.param{
+    list-style: none;
+    &--el{
+        background: $c-beige;
+        border-radius: 13px;
+        &__btn{
+            background: $c-beigeDark;
+        }
+    }
+    &--icone{
+        background-color: $c-green;
+        border-radius: 13px;
+    }
+    
+}
+.couvaison{ 
+    background-color: $c-beige;
+    border-radius: 13px;
+}
+.form{
+    &--name{
+        input{
+            height: 32px;
+            width: 320px;
+            background: $c-yellowLight;
+            border: none;
+            border-radius: 13px;
+        }
+    }
+}
+
+.species{
+    list-style: none;
+    &--el{
+        border: none;
+        background: $c-beigeDark;
+        border-radius: 13px;
+        box-shadow: 5px 5px 8px 0px rgba(174,174,192,0.25), -5px -5px 8px 0px rgb(255,255,255);
+        input{
+            visibility: hidden;
+        }
+        &__select{
+            background: $c-yellow;
+        }
+    }
+}
+.messageError{
+    background: rgba(0,0,0,0.8);
+    &--case{
+        background: $c-beige;
+        border-radius: 13px;
+    }
+}

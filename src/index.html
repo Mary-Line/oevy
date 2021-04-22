@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ŒVY</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="description" content="">
+  <!-- Meta Partage -->
+  <!-- Favicon -->
+  <link rel="icon" href="assets/faticon/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/app.css">
+  <script src="scripts/app.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <header>
+    <h1 class="title title--logo">
+      <svg class="logo" viewBox="0 0 637.52 254" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <style>.cls-1{fill:#281e01;}.cls-2{fill:none;stroke:#f2b705;stroke-linecap:round;stroke-width:33px;}.cls-3{fill:#f2edd5;}.cls-4{fill:#f2b705;}</style>
+        </defs>
+        <g data-name="Calque 1">
+          <path class="cls-1" d="m443.77 25.824a17.409 17.409 0 0 1 12.384 4.9 15.292 15.292 0 0 1 5.472 11.808 19.7 19.7 0 0 1-1.724 7.768l-71.14 166.47a19.272 19.272 0 0 1-7.2 8.352 18.168 18.168 0 0 1-9.792 2.88 19.956 19.956 0 0 1-9.216-2.88 19.225 19.225 0 0 1-6.336-8.064l-71.136-167.04a16.029 16.029 0 0 1-1.44-7.2 15.037 15.037 0 0 1 5.76-12.384q5.76-4.9 11.808-4.9a16.321 16.321 0 0 1 9.216 2.88 18.186 18.186 0 0 1 6.624 8.352l57.888 136.22 52.992-136.22a18.4 18.4 0 0 1 6.624-8.064 16.321 16.321 0 0 1 9.216-2.88zm193.75 17.568a19.233 19.233 0 0 1-3.168 10.656l-60.192 86.112v70.272a17.768 17.768 0 0 1-4.9 12.672 16.092 16.092 0 0 1-11.808 4.9 17.409 17.409 0 0 1-12.384-4.9 17.768 17.768 0 0 1-4.9-12.672v-74.3l-59.9-79.488q-5.184-6.912-5.184-13.536a15.557 15.557 0 0 1 5.76-12.384q6.048-5.184 12.672-5.184 8.064 0 14.112 8.064l50.688 69.984 47.52-69.408q6.048-8.64 14.4-8.64a16.578 16.578 0 0 1 12.1 5.184 17.237 17.237 0 0 1 5.184 12.668z"/>
+          <rect class="cls-1" width="254" height="254" rx="30"/>
+          <line class="cls-2" x1="114.5" x2="205.5" y1="212.5" y2="212.5"/>
+          <line class="cls-2" x1="104.5" x2="206.5" y1="41.5" y2="41.5"/>
+          <path class="cls-3" d="M106.893,229a72.6,72.6,0,0,0,53.533-22.762C175.045,190.562,183,168.229,183,141.6,182.785,87.7,149.676,25,106.893,25S31,87.7,31,141.6c0,26.413,7.74,48.745,22.574,64.636C67.119,220.84,86.038,229,106.893,229Z"/>
+          <circle class="cls-4" cx="206.5" cy="123.5" r="16.5"/>
+        </g>
+      </svg>
+    </h1>
+    <button class="btn btn--small btn--small__notif">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="32" viewBox="0 0 26 32" fill="none">
+        <path class="bell" fill-rule="evenodd" clip-rule="evenodd" d="M25.3626 23.4045C23.9127 21.9547 21.9451 20.5049 21.9451 18.3301V11.288C21.9451 6.93851 19.0454 3.21036 14.903 2.27832C15.1101 1.0356 14.1781 0 12.9354 0C11.7962 0 10.8642 1.0356 10.9677 2.17476C7.03247 3.1068 4.02924 6.73139 4.02924 10.9773V18.3301C4.02924 20.5049 2.0616 21.9547 0.611761 23.4045C-0.734518 24.6472 0.301081 26.9256 2.16516 26.9256H9.00011C9.00011 29.5146 9.93215 32 12.9354 32C16.0422 32 16.9742 29.5146 16.9742 26.9256H23.8092C25.6732 26.9256 26.7088 24.6472 25.3626 23.4045Z" />
+      </svg>
+    </button>
+  </header>
+  <main class="main">
+    <section>
+      <ul class="param">
+        <li class="param--el">
+          <p class="text text--bold text--mega param--hour"></p>
+          <p class="text text--bold text--big param--date"></p>
+        </li>
+        <li class="param--el param--el__btn btn">
+          <div class="param--icone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" viewBox="0 0 33 60" fill="none">
+              <g filter="url(#filter0_d)">
+              <path d="M18.9661 32.5646V8.82751C18.9661 5.60889 16.3568 3 13.1385 3C9.91992 3 7.31104 5.60889 7.31104 8.82751V32.5646C4.70361 34.3989 3 37.4312 3 40.8615C3 46.4608 7.53918 51 13.1385 51C18.7379 51 23.2771 46.4608 23.2771 40.8615C23.2771 37.4312 21.5731 34.3989 18.9661 32.5646Z" fill="#FCEBB9"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0" y="0" width="32.2771" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dx="3" dy="3"/>
+              <feGaussianBlur stdDeviation="3"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+          </div>
+          <div class="param--data">
+            <p class="text text--minus">Température</p>
+            <p class="text text--large text--bold">37,7<span class="text text--minus"> °C</span></p>
+          </div>
+          <svg class="param--more" xmlns="http://www.w3.org/2000/svg" width="8" height="32" viewBox="0 0 8 32" fill="none">
+            <circle cx="4" cy="4" r="4" fill="#FADE8C"/>
+            <circle cx="4" cy="16" r="4" fill="#FADE8C"/>
+            <circle cx="4" cy="28" r="4" fill="#FADE8C"/>
+          </svg>
+        </li>
+        <li class="param--el  param--el__btn btn">
+          <div class="param--icone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" viewBox="0 0 33 60" fill="none">
+              <g filter="url(#filter0_d)">
+              <path d="M18.9661 32.5646V8.82751C18.9661 5.60889 16.3568 3 13.1385 3C9.91992 3 7.31104 5.60889 7.31104 8.82751V32.5646C4.70361 34.3989 3 37.4312 3 40.8615C3 46.4608 7.53918 51 13.1385 51C18.7379 51 23.2771 46.4608 23.2771 40.8615C23.2771 37.4312 21.5731 34.3989 18.9661 32.5646Z" fill="#FCEBB9"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0" y="0" width="32.2771" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dx="3" dy="3"/>
+              <feGaussianBlur stdDeviation="3"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+          </div>
+          <div class="param--data">
+            <p class="text text--minus">Humidité</p>
+            <p class="text text--large text--bold">10<span class="text text--minus"> %</span></p>
+          </div>
+          <svg class="param--more" xmlns="http://www.w3.org/2000/svg" width="8" height="32" viewBox="0 0 8 32" fill="none">
+            <circle cx="4" cy="4" r="4" fill="#FADE8C"/>
+            <circle cx="4" cy="16" r="4" fill="#FADE8C"/>
+            <circle cx="4" cy="28" r="4" fill="#FADE8C"/>
+          </svg>
+        </li>
+        <li class="param--el">
+          <div class="param--icone">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="60" viewBox="0 0 33 60" fill="none">
+              <g filter="url(#filter0_d)">
+              <path d="M18.9661 32.5646V8.82751C18.9661 5.60889 16.3568 3 13.1385 3C9.91992 3 7.31104 5.60889 7.31104 8.82751V32.5646C4.70361 34.3989 3 37.4312 3 40.8615C3 46.4608 7.53918 51 13.1385 51C18.7379 51 23.2771 46.4608 23.2771 40.8615C23.2771 37.4312 21.5731 34.3989 18.9661 32.5646Z" fill="#FCEBB9"/>
+              </g>
+              <defs>
+              <filter id="filter0_d" x="0" y="0" width="32.2771" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+              <feOffset dx="3" dy="3"/>
+              <feGaussianBlur stdDeviation="3"/>
+              <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+              <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+              </defs>
+              </svg>
+          </div>
+          <div class="param--data">
+            <p class="text text--minus">Niveau d'eau</p>
+            <p class="text text--large text--bold">10<span class="text text--minus"> %</span></p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="couvaison">
+      <section class="couvaison--error">
+        <div>
+          button clas=""
+        </div>
+      </section>
+      <section class="couvaison--display">
+        <h2 class="title title--medium">Ajouter une couvaison</h2>
+        <button class="btn btn--main btn--large btn--main__add">Ajouter</button>      
+      </section>
+      <section class="couvaison--create hidden">
+        <button class="btn btn--main btn--small btn--main__close">fermer</button>
+        <h2 class="title title--medium title--bold">Création d'une couvaison</h2>
+        <form action="" method="get" class="couvaison--form">
+          <div class="couvaison--form__un">
+            <div class="form--name">
+              <label for="name"><h3 class="title title--small">Nom de la couvaison</h3></label>
+              <input type="text" name="name" id="name" required minlength="1" maxlength="20" placeholder="Nom_couvaison">
+            </div>
+            <div class="form--species">
+              <h3 class="title title--small">Choix de l'espèce</h3>
+              <ul class="species">
+                <!--importer les espèces depuis DB-->
+                <li class="species--el">
+                  <input type="radio" id="male" name="gender" value="male" required>
+                  <label class="form--el" for="male"><p>poule</p></label>
+                </li>
+                <li class="species--el">
+                  <input type="radio" id="female" name="gender" value="female" required>
+                  <label class="form--el" for="female"><p>dinde</p></label>
+                </li>
+                <li class="species--el">
+                  <input type="radio" id="other" name="gender" value="other" required>
+                  <label class="form--el" for="other"><p>canard</p></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="submit" class="btn btn--main btn--check">Valider</button>
+        </form>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

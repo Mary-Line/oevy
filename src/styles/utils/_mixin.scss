@@ -1,0 +1,29 @@
+@mixin test{
+    @media (min-width: #{$screen-w}){
+        @content;
+    }
+}
+
+@mixin md{
+    @media (min-width: #{$screen-md}){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (min-width: #{$screen-lg}){
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (min-width: #{$screen-xl}){
+        @content;
+    }
+}
+
+@mixin rwd($screen){
+    @media (min-width: $screen+'px'){
+        @content;
+    }
+}
