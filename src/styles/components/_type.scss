@@ -46,9 +46,13 @@ body{
     &--small{
         font-size: $s-big;
     }
+    &--mini{
+        font-size: $s-medium;
+    }
     &--bold{
         font-weight: $w-bold;
     }
+
 }
 .param{
     &--el{
@@ -90,5 +94,10 @@ body{
                 color: $c-brun;
             }
         }
+    }
+}
+.step{
+    p{
+        line-height: 1;
     }
 }

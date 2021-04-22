@@ -4,10 +4,19 @@ h1{
 p{
     margin: 0;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    margin: 16px 16px 0 16px;
+.header{
+    &--interface{
+        display: flex;
+        justify-content: space-between;
+        margin: 16px 16px 0 16px;
+    }
+    &--couvaison{
+        padding-left: 80px;
+        .title--medium{
+            padding: 0;
+        }
+
+    }
 }
 .hidden{
     display: none; 
@@ -174,4 +183,28 @@ header{
             padding: 96px 0;
         }
     }
+}
+.step{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    &--el{
+        .title--mini{
+            padding: 16px 0;
+        }
+    }
+    &--text{
+        padding: 48px 0;
+        position: relative;
+    }
+}
+#container{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

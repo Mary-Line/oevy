@@ -89,3 +89,16 @@ let btnOk = document.querySelector(".btn--message__ok");
 btnOk.addEventListener("click", (e)=>{
     messageError.classList.add("hidden");
 })
+
+var ProgressBar = require('progressbar.js')
+let bar = new ProgressBar.Circle(container, {
+    strokeWidth: 8,
+    easing: 'easeInOut',
+    duration: 1400,
+    color: '#FADE8C',
+    trailColor: '#FEF8E6',
+    trailWidth: 8,
+    svgStyle: null
+  });
+  
+  bar.animate(0.2);  // Number from 0.0 to 1.0

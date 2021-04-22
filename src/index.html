@@ -14,6 +14,7 @@
   <script src="scripts/app.js" defer></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet"> 
+  <script src="./dist/progressbar.min.js"></script>
 </head>
 <body>
   <header class="header--interface">
@@ -176,24 +177,35 @@
           <li class="step--el">
             <h4 class="title title--mini">Couvaison</h4>
             <!--Importer depuis DB-->
-            <p class="text--mega text--bold" id="time">21</p>
-            <p class="text--large">Jours</p>
+            <div class="step--text">
+              <p class="text--mega text--bold" id="time">21</p>
+              <p class="text--large">Jours</p>
+              <div id="container"></div>
+            </div>
           </li>
           <li class="step--el">
             <h4 class="title title--mini">Arrêt retournement</h4>
-             <!--Importer depuis DB-->
-            <p class="text--mega text--bold" id="dayRotation">05</p>
-             <!--Importer depuis DB-->
-            <p class="text--large" id="monthRotation">Novembre</p>
+            <div class="step--text">
+              <!--Importer depuis DB-->
+              <p class="text--mega text--bold" id="dayRotation">05</p>
+              <!--Importer depuis DB-->
+              <p class="text--large" id="monthRotation">Novembre</p>
+            </div>
+             
           </li>
           <li class="step--el">
             <h4 class="title title--mini">&Eacute;closion</h4>
-             <!--Importer depuis DB-->
-            <p class="text--mega text--bold" id="dayHatch">05</p>
-             <!--Importer depuis DB-->
-            <p class="text--large" id="monthHatch">Novembre</p>
+            <div class="step--text">
+              <!--Importer depuis DB-->
+              <p class="text--mega text--bold" id="dayHatch">05</p>
+              <!--Importer depuis DB-->
+              <p class="text--large" id="monthHatch">Novembre</p>
+            </div>
           </li>
         </ul>
+        <button class="btn btn--main btn--small btn--main__trash">Delete</button>
+        <button class="btn btn--main btn--small btn--main__edit">Modifier</button>
+        <button class="btn btn--couvaison">Lancer la couvaison</button>
       </section>
     </section>
   </main>

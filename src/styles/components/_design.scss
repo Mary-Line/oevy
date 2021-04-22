@@ -90,3 +90,14 @@ body{
         border-radius: 13px;
     }
 }
+.step{
+    &--el{
+        background-color: $c-whiteYellow;
+        border-radius: 13px;
+        text-align: center;
+        .title--mini{
+            background-color: $c-yellowLight;
+            border-radius: 13px 13px 0 0;
+        }
+    }
+}
