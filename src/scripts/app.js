@@ -4,7 +4,7 @@
 ================================*/
 let param_date = document.querySelector(".param--date");
 let param_hour = document.querySelector(".param--hour");
-let timer = setInterval(horloge, 3000);
+setInterval(horloge, 3000);
 function horloge(){
     let d = new Date();
     let hours = d.getHours();
@@ -89,8 +89,10 @@ let btnOk = document.querySelector(".btn--message__ok");
 btnOk.addEventListener("click", (e)=>{
     messageError.classList.add("hidden");
 })
-
-var ProgressBar = require('progressbar.js')
+/*================================
+    PROGRESSION COUVAISON
+================================*/
+let ProgressBar = require('progressbar.js')
 let bar = new ProgressBar.Circle(container, {
     strokeWidth: 8,
     easing: 'easeInOut',
@@ -101,4 +103,29 @@ let bar = new ProgressBar.Circle(container, {
     svgStyle: null
   });
   
-  bar.animate(0.2);  // Number from 0.0 to 1.0
+  bar.animate(0);  // Number from 0.0 to 1.0
+
+/*================================
+    EVOLUTION DATE
+================================*/
+
+function addDaysToDate(date, days){
+    let res = new Date(date);
+    res.setDate(res.getDate() + days);
+    return res;
+}
+
+let start = 0;
+let duree = 21; //IMPORTER DEPUIS DB
+let rotation = duree - 3;
+let date_eclosion = addDaysToDate(today, duree);
+let date_rotation= addDaysToDate(today, rotation);
+console.log(today);
+console.log(duree);
+console.log(rotation);
+console.log(date_eclosion);
+console.log(date_rotation);
+
+
+
+

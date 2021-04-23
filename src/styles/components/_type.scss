@@ -86,6 +86,9 @@ body{
         text-indent: 120px;
         color: $c-beigeDark;   
     }
+    &--couvaison{
+        font-size: $s-big;
+    }
 }
 .form{
     &--name{
